@@ -18,7 +18,7 @@ public class Person {
 	
 	public void showPerson() {
 		
-		System.out.println("이름은"+name+"나이는"+age);
+		System.out.println("이름은"+name+"나이는"+age+"입니다.");
 	}
 
 	public Person getPerson() {
