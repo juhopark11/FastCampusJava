@@ -20,7 +20,8 @@ public class TakeTest {
 	bus100.showBusInfo();
 	blueSubway.showBusInfo();
 	
-	bus200.showBusInfo();
+	
+	bus200.showBusInfo();  
 	
 	}
 }
