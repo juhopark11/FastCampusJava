@@ -12,11 +12,11 @@ public class BirthDay {
 		return day;
 	}
 	public void setDay(int day) {
-		if(day<1 || day>31) {
+		if(day < 1 || day>31) {
 			isValid = false;
 		}
 		else {
-			isValid = true; 
+			isValid = true;
 			this.day = day;
 		}
 	}
