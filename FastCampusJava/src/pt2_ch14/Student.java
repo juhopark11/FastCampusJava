@@ -18,14 +18,14 @@ public class Student {
 	}
 
 
-	//버스를 타면 takeBus가 호출되고, 지하철을 타면 takeSubway가 호출되면 된다. 
+	//버스를 타면 takeBus가 호출되고, 지하철을 타면 takeSubway가 호출되면 된다. 즉, 모두 호출이 아닌 필요한것만 호출되면 된다.
 	//학생이 버스를 탄다. 어떤 버스를 탔는지가 매개변수로 넘어온다. 
 	public void takeBus(Bus bus) {
 		bus.take(1000); //버스를 타면 1000원을 지불한다. bus를 만들고 take를 만들자. 
 		this.money -=1000;
 	}
 	
-	//학생이 지하철을 탄다. 지하철 정보가매개변수로 넘어온다. 
+	//학생이 지하철을 탄다. 지하철 정보가 매개변수로 넘어온다. 
 	public void takeSubway(Subway subway) {
 		subway.take(1200);
 		this.money -=1200;
