@@ -2,11 +2,11 @@ package pt2_ch14;
 
 public class Bus {
 
-	int busNumber;
+	String busNumber;
 	int passengerCount;
 	int money;
 	
-	public Bus(int busNumber) {
+	public Bus(String busNumber) {
 		this.busNumber = busNumber;
 	}
 	
@@ -17,6 +17,6 @@ public class Bus {
 	}
 	
 	public void showBusInfo() {
-		System.out.println("승객수"+passengerCount+"이고, 보유수익은"+money+"입니다.");
+		System.out.println(busNumber+"의 승객수"+passengerCount+"이고, 보유수익은"+money+"입니다.");
 	}
 }

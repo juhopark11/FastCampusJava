@@ -30,6 +30,11 @@ public class Student {
 		subway.take(1200);
 		this.money -=1200;
 	}
+	
+	public void takeTaxi(Taxi taxi) {
+		taxi.take(10000);
+		this.money -=10000;
+	}
 
 	public void showInfo() {
 		

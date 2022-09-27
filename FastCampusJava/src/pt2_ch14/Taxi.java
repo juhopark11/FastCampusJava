@@ -1,21 +1,20 @@
 package pt2_ch14;
 
+
 public class Taxi {
 
-	String taxiName; 
+	String Company; 
 	int money; 
 	
-	
-	public Taxi(String taixName) {
-		this.taxiName = taxiName; 
+	public Taxi(String Company) {
+		this.Company = Company; 
 	}
 	
 	public void take(int money) {
-		money+=money;		
+		this.money+=money;		
 	}
 	
 	public void showTaxiInfo() {
-		
-		System.out.println(taxiName+"수입은"+money+"입니다.");
+		System.out.println(Company+" 수입은 "+money+"입니다.");
 	}
 }
