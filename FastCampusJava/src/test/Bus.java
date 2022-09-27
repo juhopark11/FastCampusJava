@@ -2,26 +2,22 @@ package test;
 
 public class Bus {
 
-	
-	int num;
-	int balance;
+	String busName;
 	int passengerCount;
+	int money; 
 	
-	
-	public Bus(int num) {
-		
-		this.num = num;
+	public Bus(String busName) {
+		this.busName = busName;
 	}
 	
-	public void take(int balance) {
+	public void take(int money) {
 		
-		this.balance += balance;
+		this.money += money;
 		passengerCount++;
 	}
 	
 	public void showBusInfo() {
-		
-		System.out.println(num+"번 버스총액"+balance+"\n승객수"+passengerCount);
+		System.out.println(busName+"의 승객은 "+passengerCount+"명, 수익은"+money+"입니다.");
 	}
 	
 }
