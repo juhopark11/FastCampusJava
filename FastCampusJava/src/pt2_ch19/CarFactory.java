@@ -7,5 +7,19 @@ package pt2_ch19;
 
 public class CarFactory {
 	
+	private static CarFactory instance = new CarFactory(); //2. 유일한 인스턴스는 내부에서 만듦
+	
+	private CarFactory() {} // 1. 싱글톤을 private로 생성자를 제공. 
+	
+	public static CarFactory getInstance() { //3. 외부에서 접근가능한 getInstance제공. 
+		return instance; 
+	}
+	
+	/// 아... 이부분 이해가 안감. 
+	public Car createCar() {
+		Car car = new Car();
+		return car;
+	}
+
 	
 }

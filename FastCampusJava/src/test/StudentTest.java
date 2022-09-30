@@ -10,10 +10,8 @@ public class StudentTest {
 		
 		person1.takeBus(bus1); //사람을 버스에 태움. 
 		
-		person1.showInfo();
-		bus1.showBusInfo();
-		
-		
+		person1.showInfo(); // 사람의 상태를 보여달라. 
+		bus1.showBusInfo(); // 버스의 상태를 보여달라. 
 		
 	}
 }

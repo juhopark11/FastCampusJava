@@ -3,12 +3,12 @@ package pt2_ch19;
 public class CarFactoryTest {
 
 	public static void main(String[] args) {
-		CarFactory factory = CarFactory.getInstance(); //싱클톤 패턴. 
-		Car mySonata = factory.createCar();
+		CarFactory factory = CarFactory.getInstance(); //싱글톤 패턴. (객체 생성 안하고 바로 호출)
+		Car mySonata = factory.createCar(); // createCar여기서 객체가 생성이 됨. 
 		Car yourSonata = factory.createCar();
-		
-		System.out.println(mySonata.getCarNum());     //10001 출력
-		System.out.println(yourSonata.getCarNum());   //10002 출력
+//		
+//		System.out.println(mySonata.getCarNum());     //10001 출력
+//		System.out.println(yourSonata.getCarNum());   //10002 출력
 	}
 }
 
