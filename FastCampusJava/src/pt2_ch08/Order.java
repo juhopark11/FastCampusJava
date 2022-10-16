@@ -6,7 +6,7 @@ public class Order {
 	int phoneNum;
 	String address;
 	int orderDate;
-	int orderTime;
+	int orderTime ;
 	
 	public Order(int orderNum, int phoneNum, String address, int orderDate, int orderTime) {
 		this.orderNum = orderNum;
